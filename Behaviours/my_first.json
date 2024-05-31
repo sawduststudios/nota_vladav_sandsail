@@ -34,8 +34,8 @@
 			"height": 90,
 			"title": "Common.relativeMove",
 			"width": 225,
-			"x": 786,
-			"y": 286
+			"x": 790,
+			"y": 302
 		},
 		"IJjkwjeZzIM2rqd6T06jnWKQGAHVTF6t": {
 			"height": 60,
@@ -50,20 +50,6 @@
 			"width": 219,
 			"x": 741,
 			"y": 30
-		},
-		"XrgDCYC7364eRu6TNrnFTmEOd3ZlKIPc": {
-			"height": 72,
-			"title": "echo",
-			"width": 148,
-			"x": 810,
-			"y": 396
-		},
-		"n2DspidKAwCbDhuqq2L5gQQ0kHvPSGKr": {
-			"height": 72,
-			"title": "echo",
-			"width": 134,
-			"x": 722,
-			"y": -156
 		},
 		"rKjc95iLdsSLucHIBsYKeeDlI4pdJG2I": {
 			"height": 70,
@@ -83,18 +69,6 @@
 	"root": {
 		"children": [ {
 			"children": [ {
-				"children": [],
-				"id": "n2DspidKAwCbDhuqq2L5gQQ0kHvPSGKr",
-				"nodeType": "luaCommand",
-				"parameters": [ {
-					"name": "msg",
-					"value": "\"captain\""
-				}, {
-					"name": "scriptName",
-					"value": "echo"
-				} ],
-				"scriptName": "echo"
-			}, {
 				"children": [],
 				"id": "AuapWTT79nNzGZsfQ8Fw4hJyM32aqKWQ",
 				"nodeType": "luaCommand",
@@ -159,18 +133,6 @@
 					"value": "Common.relativeMove"
 				} ],
 				"scriptName": "Common.relativeMove"
-			}, {
-				"children": [],
-				"id": "XrgDCYC7364eRu6TNrnFTmEOd3ZlKIPc",
-				"nodeType": "luaCommand",
-				"parameters": [ {
-					"name": "msg",
-					"value": "\"other unit\""
-				}, {
-					"name": "scriptName",
-					"value": "echo"
-				} ],
-				"scriptName": "echo"
 			} ],
 			"id": "6WryVDwwQEaunvYzHstTY1zHZEKr4M7m",
 			"nodeType": "sequence",
