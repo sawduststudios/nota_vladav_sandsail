@@ -1,0 +1,113 @@
+{
+	"additionalNodes": [],
+	"additionalParameters": {
+		"root": {
+			"height": 148,
+			"width": 222
+		}
+	},
+	"inputs": [ {
+		"command": "BETS_UNIT",
+		"name": "transporter"
+	}, {
+		"command": "BETS_UNIT",
+		"name": "unit"
+	}, {
+		"command": "Variable",
+		"name": "targetPos"
+	} ],
+	"outputs": [],
+	"properties": {
+		"AmhAGrczTbG3Nb3Z0NxLWCZRiqhYEh5O": {
+			"height": 54,
+			"title": "failure",
+			"width": 131,
+			"x": 656,
+			"y": 158
+		},
+		"V9gSJeNik5yloDqTcRCfDithMXwYz4Er": {
+			"height": 60,
+			"title": "sequence",
+			"width": 143,
+			"x": 706,
+			"y": -107
+		},
+		"jm1ZEuqNUnMRbETTfVImmZITaDwPgSCW": {
+			"height": 92,
+			"title": "nota_kahlan_ttdr.unloadUnit",
+			"width": 260,
+			"x": 971,
+			"y": -9
+		},
+		"vvWYATU5h5u9VKOCUlqGN3v1pgF2dgUM": {
+			"height": 92,
+			"title": "nota_kahlan_ttdr.loadUnit",
+			"width": 244,
+			"x": 964,
+			"y": -165
+		},
+		"zuMte4ucFH3Kqfn7dkd1ttZyXulYiYsp": {
+			"height": 90,
+			"title": "luaCondition",
+			"width": 252,
+			"x": 339,
+			"y": 29
+		}
+	},
+	"roles": [ {
+		"categories": [],
+		"name": "Role 0"
+	} ],
+	"root": {
+		"children": [ {
+			"children": [ {
+				"children": [],
+				"id": "vvWYATU5h5u9VKOCUlqGN3v1pgF2dgUM",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "transporter",
+					"value": "transporter"
+				}, {
+					"name": "unit",
+					"value": "unit"
+				}, {
+					"name": "scriptName",
+					"value": "nota_kahlan_ttdr.loadUnit"
+				} ],
+				"scriptName": "nota_kahlan_ttdr.loadUnit"
+			}, {
+				"children": [],
+				"id": "jm1ZEuqNUnMRbETTfVImmZITaDwPgSCW",
+				"nodeType": "luaCommand",
+				"parameters": [ {
+					"name": "transporter",
+					"value": "transporter"
+				}, {
+					"name": "unit",
+					"value": "unit"
+				}, {
+					"name": "scriptName",
+					"value": "nota_kahlan_ttdr.unloadUnit"
+				} ],
+				"scriptName": "nota_kahlan_ttdr.unloadUnit"
+			} ],
+			"id": "V9gSJeNik5yloDqTcRCfDithMXwYz4Er",
+			"nodeType": "sequence",
+			"parameters": []
+		}, {
+			"children": [],
+			"id": "AmhAGrczTbG3Nb3Z0NxLWCZRiqhYEh5O",
+			"nodeType": "failure",
+			"parameters": []
+		} ],
+		"id": "zuMte4ucFH3Kqfn7dkd1ttZyXulYiYsp",
+		"nodeType": "luaCondition",
+		"parameters": [ {
+			"name": "expression",
+			"value": "transporter ~= nil and unit ~= nil"
+		}, {
+			"name": "repeat",
+			"value": "false"
+		} ]
+	}
+}
