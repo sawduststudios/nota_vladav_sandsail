@@ -1,4 +1,4 @@
 # README
 
-Solution of the sandsail assignment in 2024 using the Role split node.
+Solutions of the NOTA HLAA asignments in 2024.
 Vladimír Hořký
