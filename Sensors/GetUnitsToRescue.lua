@@ -11,10 +11,9 @@ function getInfo()
 end
 
 -- @description return filtered list of units
--- @argument listOfUnits [array of unitIDs] unfiltered list 
--- @argument category [table] BETS category
+-- @argument listOfUnits [array of unitIDs] unfiltered list
 -- @return newListOfUnits [array of unitIDS] filtered list
-return function(listOfUnits, category)
+return function(listOfUnits)
 	local unitsToRescue = {}
 	
 	for i=1, #listOfUnits do
@@ -24,7 +23,7 @@ return function(listOfUnits, category)
 			and UnitDefs[thisUnitDefID].name ~= "armpeep" 
 			and not UnitDefs[thisUnitDefID].cantBeTransported 
 			and not Spring.GetUnitIsDead(thisUnitID)
-		) then -- TODO: check this
+		) then
 			local unitX, unitY, unitZ = Spring.GetUnitPosition(thisUnitID)
 			if (unitX > 3100 and unitZ < 5800) then
 				unitsToRescue[#unitsToRescue + 1] = thisUnitID
